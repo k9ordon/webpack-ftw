@@ -8,11 +8,13 @@ module.exports = {
     },
     output: {
         path: __dirname + "/public",
-        filename: "[name].js"
+        filename: "[name].js",
+        publicPath: "/public/",
     },
     module: {
         loaders: [{
             test: /\.css$/,
+            // loader: "style-loader!css-loader"
             loader: ExtractTextPlugin.extract("style-loader", "css-loader")
         }]
     },
