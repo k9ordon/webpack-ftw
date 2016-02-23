@@ -1,17 +1,17 @@
 {
-  "name": "1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "webpack": "^1.12.14"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js --hot --inline",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "webpack": "^1.12.14"
+    },
+    "scripts": {
+        "start": "webpack entry.js bundle.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }

@@ -4,9 +4,13 @@
     "description": "",
     "main": "index.js",
     "dependencies": {},
-    "devDependencies": {},
+    "devDependencies": {
+        "css-loader": "^0.23.1",
+        "style-loader": "^0.13.0",
+        "webpack": "^1.12.14"
+    },
     "scripts": {
-        "start": "webpack-dev-server --config webpack.config.js --hot --inline",
+        "start": "webpack entry.js bundle.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
