@@ -14,10 +14,13 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap")
+            loader: ExtractTextPlugin.extract("style-loader", "css-loader")
         }]
     },
     plugins: [
+        // new webpack.NoErrorsPlugin(),
+        //new webpack.optimize.UglifyJsPlugin([options]),
+
         new ExtractTextPlugin("[name].css"),
         new webpack.optimize.CommonsChunkPlugin("commons", "commons.js")
     ]

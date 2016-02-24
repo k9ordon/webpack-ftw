@@ -11,7 +11,7 @@
     "webpack": "^1.12.14"
   },
   "scripts": {
-    "start": "webpack --config webpack.config.js -d && ws"
+    "start": "NODE_ENV=production webpack --config webpack.config.js -p && ws"
   },
   "keywords": [],
   "author": "k9ordon",

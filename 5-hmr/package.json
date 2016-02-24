@@ -6,12 +6,13 @@
   "dependencies": {},
   "devDependencies": {
     "css-loader": "^0.23.1",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.14"
   },
   "scripts": {
-    "start": "webpack --config webpack.config.js -d && ws"
+    "start": "webpack-dev-server --config webpack.config.js --hot --inline -d"
   },
   "keywords": [],
   "author": "k9ordon",

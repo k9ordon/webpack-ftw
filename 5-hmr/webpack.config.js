@@ -1,5 +1,4 @@
 var webpack = require("webpack");
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
@@ -13,12 +12,11 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.css$/,
-            loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap")
+            test: /\.scss$/,
+            loaders: ["style", "css?sourceMap", "sass?sourceMap"]
         }]
     },
     plugins: [
-        new ExtractTextPlugin("[name].css"),
         new webpack.optimize.CommonsChunkPlugin("commons", "commons.js")
     ]
 }

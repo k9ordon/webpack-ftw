@@ -1,5 +1,5 @@
 {
-    "name": "1",
+    "name": "webpack-ftw",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -8,10 +8,9 @@
         "webpack": "^1.12.14"
     },
     "scripts": {
-        "start": "webpack entry.js bundle.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "webpack entry.js bundle.js -d && ws"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC"
+    "author": "k9ordon",
+    "license": "WTFPL"
 }
