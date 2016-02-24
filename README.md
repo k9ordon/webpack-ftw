@@ -1,5 +1,9 @@
 # webpack ftw
 
+![shipping a frontend](assets/cover.png)
+
+simple steps for shipping a frontend with webpack
+
 ## setup
 
 ```sh
@@ -16,6 +20,10 @@ simple webpack bundle example with dependencies
 webpack entry.js bundle.js
 ```
 
+![](assets/1.png)
+
+
+
 ## 2. the css thing
 adding css to modules via .js  ```require('style!css!./entry.css')```
 
@@ -23,6 +31,8 @@ adding css to modules via .js  ```require('style!css!./entry.css')```
 ```sh
 npm i css-loader style-loader -D
 ```
+
+![](assets/2.png)
 
 ## 3. loaders
 
@@ -34,12 +44,17 @@ npm i babel-loader babel-core babel-preset-es2015 -D
 webpack --config webpack.config.js
 ```
 
+![](assets/3.png)
+
+
 ## 4. code splitting
 
 extract css files && commons code
 ```sh
 npm install extract-text-webpack-plugin -D
 ```
+
+![](assets/4.png)
 
 ## 5. dev server & hmr
 
