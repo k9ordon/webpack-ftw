@@ -1,8 +1,8 @@
 # webpack ftw
 
-![shipping a frontend](assets/cover.png)
+[![shipping a frontend](assets/cover.png)](https://speakerdeck.com/k9ordon/webpack-ftw)
 
-simple steps for shipping a frontend with webpack
+simple steps for shipping a frontend with webpack - [show slides](https://speakerdeck.com/k9ordon/webpack-ftw)
 
 ## setup
 
